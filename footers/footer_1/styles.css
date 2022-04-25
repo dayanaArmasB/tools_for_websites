@@ -36,12 +36,18 @@ p{
 }
 
 .social-media a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
     color: #092c5c;
-    margin-left: 47px;
+    margin-right: 20px;
     text-decoration: none;
     transition: .3s linear;
     font-size: 27px;
-
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;
 }
 .social-media a:hover{
     color: #fc5c65;
@@ -127,7 +133,8 @@ p{
     }
 
     .social-media a{
-        margin-left: 15px;
+        margin-right: 25px;
+        margin-left: 17px;
     }
 
     .rights-text {
@@ -142,7 +149,7 @@ p{
     }
 
     .social-media a{
-        margin-left: 15px;
+        margin-right: 10px;
     }
 
     .rights-text {
