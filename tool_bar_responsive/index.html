@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>toolbar responsive</title>
+    <title>toolbar responsiveaaa</title>
 </head>
 <body>
    <nav>
        <div class="mobile">
            <div class="header">
                 <div class="logo">
-                    <!-- <img src="imagenes/1.LOGOTIPO-UTP.png" alt="LOGOTIPO-UTP"> -->
-                    LOGO
+                    <img src="imagenes/logon.png" alt="LOGOTIPO-UTP"> 
                 </div>
                 <div class="more">
                     <button id="bMore"><span class="material-icons">menu</span></button>
                 </div>
-           </div>
+           </div> 
            <div id= "links" class="links">
             <a href="#">Services</a>
             <a href="#">About</a>
@@ -31,11 +30,11 @@
        </div>
 
        <div class="desktop">
-            <div class="logo">
-                <!-- <img src="imagenes/1.LOGOTIPO-UTP.png" alt="LOGOTIPO-UTP"> -->
-                LOGO
-            </div>
+        
             <div class="primary">
+                <div class="logo">
+                    <img src="imagenes/logon.png" alt="LOGOTIPO-UTP"> 
+                </div>
                 <a href="#">Services</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
@@ -61,6 +60,12 @@
    <script>
        const bMore = document.querySelector('#bMore');
        const links = document.querySelector('#links');
+       console.log(bMore);
+       console.log(links);
+       console.log('hola mundooo');
+       let a = 1 ;
+       let b= 2 ;
+       console.log(' la suma es ' + a + b )
        bMore.addEventListener('click', e => { 
             links.classList.toggle('collapsed');
        })
