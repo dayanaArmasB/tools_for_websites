@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.Container-products{
+    width: 100%;
+    max-width: 1125px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 40px 0px;
+}
+
+.Container-products figure {
+    position: relative;
+    width: 310px;
+    height: 410px; 
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.50);
+    cursor:pointer;
+    border-radius: 7px;
+}
+
+.Container-products figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.Container-products figure .capa{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.Container-products figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Container-products figure .capa h3{
+    color: white;
+    font-size: 25px;
+    transition: all 500ms ease-out;
+}
+
+.Container-products figure:hover > .capa h3{
+    margin-top: 170px;
+    margin-left: 10px;
+}
+.Container-products figure:hover > img{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1000px){
+    .Container-products{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px;
+        margin-left: 55px;
+    }
+}
