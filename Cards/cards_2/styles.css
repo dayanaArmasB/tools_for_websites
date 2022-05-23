@@ -1,16 +1,41 @@
 
 .cont {
-    display: flex;
-    flex-direction: row; 
-}
-
-.cont p{
-    margin-bottom: 0px;
-    align-items:center;
-    text-align: end;
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
 }
 
 
+#grupo1 {
+    margin-left: 27px;
+    margin-top: 4px;
+}
+
+#grupo2 {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: stretch;
+
+}
+.numbers-show {
+    margin-top: 4px;
+    margin-right: -850px;
+}
+
+.icon-tabler-layout-grid{
+    margin-left: 450px;
+}
+
+select{
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 20px;
+}
 
 #Nuestros-programas{
     background-color: rgb(30, 30, 30);
@@ -22,9 +47,10 @@
     padding: 150px 12px;
     text-align: left;
     margin-left: 120px;
+    margin-right: 120px;
 }
 
-#Nuestros-programas p{
+.Programas p{
     display: none;
 }
 #Nuestros-programas .Carta{
@@ -65,27 +91,6 @@
 .Carta p{
     font-weight: bolder;
 }
-@media (min-width: 720px) {
 
-    
-    #Nuestros-programas .Programas{
-        display: flex;
-        justify-content: center;
-    }
-
-    #Nuestros-programas p{
-        display: block;
-        margin-bottom: 30px;
-    }
-    #Nuestros-programas h3{
-        margin-top: 20px;
-    }
-
-    #Nuestros-programas .Carta{
-        padding: 60px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5) ;
-    }
-
-}
 
 
