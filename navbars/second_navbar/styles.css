@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+#Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 75vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/descarga.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+}
+.Container{
+    max-width: auto;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    opacity: 80%;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(30, 111, 166);
+    font-size: 30px;
+}
+
+header .Container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction:row;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+header a:hover{
+    color: darkorchid;
+}
+header .Container2{
+    background-color: rgb(245,245,245);
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Hero2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 150vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/descarga.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+   
+ 
+}
