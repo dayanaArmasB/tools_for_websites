@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    }
+}
+
 #Hero{
     display: flex;
     align-items: center;
@@ -20,17 +21,24 @@
     background-size:cover;
     background-position:top;
 }
-.Container{
+
+
+.Container, 
+.Container0, 
+.Container2{
     max-width: auto;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header{
     background-color: rgb(245,245,245);
     position: sticky;
-    top: 0%;
+    top: 0;
     width: 100%;
-    opacity: 80%;
+    /*opacity: 80%;*/
 }
 
 header .logo{
@@ -39,13 +47,6 @@ header .logo{
     font-weight: bold;
     color: rgb(30, 111, 166);
     font-size: 30px;
-}
-
-header .Container{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
 }
 
 header nav{
@@ -65,17 +66,7 @@ header a{
 header a:hover{
     color: darkorchid;
 }
-header .Container2{
-    background-color: rgb(245,245,245);
-    position: sticky;
-    top: 0%;
-    width: 100%;
-    opacity: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 #Hero2{
     display: flex;
