@@ -1,7 +1,7 @@
 
 .cont {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -10,36 +10,26 @@
     margin-top: 4px;
 }
 
-#grupo2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: stretch;
-
-}
 #grupo1 p{
     margin-left: 350px;
     margin-top: 4px;
 }
 
+#grupo2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-items: center;
+    margin-right: 25px;
+}
+
+
 .numbers-show {
-    margin-top: 4px;
-    margin-right: -850px;
+    margin-top: 5px;
 }
 
 .icon-tabler-layout-grid{
-    margin-left: 400px;
-}
-
-select{
-    border-radius: 5px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    text-align: center;
-    padding: 2px 20px;
+    
 }
 
 #Nuestros-programas{
