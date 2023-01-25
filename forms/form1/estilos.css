@@ -1,0 +1,160 @@
+:root{
+ --colorTextos: #090909; 
+}
+
+*,
+::before, 
+::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*Globals */
+body {
+    font-family: "Roboto";
+    background: #4568dc; 
+    background:  -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #b06ab3, #4568dc); 
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus{
+    outline:  none;
+    color: #5e5d5d;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.myfield {
+    position: relative;
+    margin: 45px;
+}
+.myinput{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+.barra{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #b06ab3, #4568dc); 
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+} 
+
+/*Controls inside the main form */
+.mainform {
+    background:white;
+    padding: 40px 15px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.mainform button {
+    font-family: "Roboto";
+    background: #4568dc; 
+    background:  -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #b06ab3, #4568dc); 
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    color: white;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mainform p {
+    height: 40px;
+    font: size 20px;
+    text-align: center;
+}
+
+.mainform a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 18px;
+} 
+.mainform a:hover {
+    color: rgb(214, 98, 199);
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: "Roboto";
+}
+
+#terminos 
+{
+    margin: auto;
+}
+
+/*.grupo {
+     text-align: center;
+} 
+
+ .form {
+    text-align: center;
+} 
+
+.mainform{
+    text-align: center;
+}
+.myform {
+    display: grid;
+     grid-template-columns: repeat(2,3fr); 
+     grid-template-rows: repeat(1,4fr); 
+     row-gap: 1rem; 
+}
+
