@@ -10,12 +10,12 @@ body{
 }
 
 .contenedor{
+    display: flex;
     width: 100%;
     max-width: 900px;
     margin: auto;
     /*ocupa el 100% de la pantalla*/
     height: 100vh;
-    display: flex;
     /*Alineacion horizontal*/
     justify-content: center;
     /*Alineacion vertical*/

@@ -21,8 +21,8 @@ body{
 }
 
 .menu > li{
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .menu > li > a{
