@@ -13,7 +13,6 @@
 		<script type="text/javascript" src="js/06-interface.js"></script>
 		    <!-- Compiled and minified CSS -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
 		<!-- <script type="text/javascript" src="js/03-textos.js"></script> -->
 		<script type="text/javascript" src="js/events.js"></script>
 	</head>
@@ -26,7 +25,6 @@
 					<div class="col-12">
 						<h3 style="text-align:center">Test</h3>
 					</div>
-					<input id="indEmpExt" class="form-control form-control-sm" hidden readonly disabled value="@ViewBag.IndEmpLDS" />
 				</div>
 
 				<div class="row" id="FrameCabeceraPM">
@@ -36,8 +34,9 @@
 								<span class="mx-1"></span>
 								<input id="txtFolio" type="text" class="form-control" placeholder="0000000" style="text-align: center;" maxlength="7">
 								<span class="mx-1"></span>
-								<input id="lblEstadoEN" class="form-control form-control-sm" readonly disabled />
-								<button class="btn btn-outline-secondary btn-primary btn-sm" id="btnBuscarFolio" type="button"><i class="fas fa-search"></i></button>
+								<input id="lblEstadoEN" readonly disabled />
+								<button class="btn btn-outline-secondary btn-primary btn-sm" id="btnBuscarFolio" type="button">
+									<i class="fas fa-search"></i></button>
 								<span class="mx-1"></span>
 								<button class="btn btn-outline-secondary btn-primary btn-sm" id="btnLeerFolio" type="button">Leer</button>
 								<span class="mx-1"></span>
@@ -67,11 +66,8 @@
 						</div>
 					</div>
 				</div>
-	
-	
-				
 				<div class="row" id="FrameContenidoPM">
-					<div class="col-md-12">
+		 
 						<div id="panelTabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
 							<ul>
 								<li><a href="#tabs-3" class="ui-tabs-anchor">Datos Generales</a></li>
@@ -83,7 +79,7 @@
 									<div class="col-md-3 col-sm-4 col-lg-4 container">
 										<div class="panel panel-primary">
 											<h6>Datos Principales</h6>
-											<div class="panel-body" style="height:450px">
+											<div class="panel-body">
 											  
 												<div class="form-check-inline  col-md-12" style="padding-left:2px">
 													<div class="col-md-3" style="padding-left:0px">
@@ -156,20 +152,13 @@
 														<input id="txtTCambio" class="form-control form-control-sm" style="font-size:small" disabled />
 													</div>
 												</div>
-	
-										 
-	
 											</div>
 										</div>
 									</div>
-	
-							
 									<div class="col-md-3 col-sm-4 col-lg-8 container">
 										<div class="panel panel-primary">
 											<h6>Documento Origen Orden de compra / Control de Calidad</h6>
-											<div class="panel-body" style="height: 480px;">
-	
-										 
+											<div class="panel-body">
 												<div class="form-check-inline  col-md-12" style="padding-left:2px">
 													<div class="col-md-2" style="padding-left:0px">
 														<label class="small">Folio OC:</label>
@@ -189,18 +178,14 @@
 												</div>
 	
 												<div class="form-check-inline  col-md-12" style="padding-left:2px">
-	
 													<div class="col-md-2" style="padding-left:0px">
 														<label class="small">Moneda OC:</label>
 														<input id="txtMonedaOC" class="form-control form-control-sm" style="font-size:xx-small" disabled />
 													</div>
 													<div class="col-md-6">
 														<input id="txtMonedaOC" class="form-control form-control-sm" style="font-size:small" width="100" />
-		 
 													</div>
-												</div>
-	
-											  
+												</div> 
 												<div class="form-check-inline  col-md-12" style="padding-left:2px">
 	
 													<div class="col-md-2" style="padding-left:0px">
@@ -216,7 +201,7 @@
 													</div>
 												</div>
 											 
-												<div class="form-check-inline  col-md-12" style="padding-left:2px">
+												<div class="form-check-inline col-md-12" style="padding-left:2px">
 													
 													<div class="form-check-inline">
 														<label class="form-check-label small" style="padding-top:5px">
@@ -263,9 +248,7 @@
 														<input id="txtDescProvee" class="form-control form-control-sm" style="font-size:small" disabled />
 													</div>
 												</div>
-	
-	
-											 
+										 
 												<div class="form-check-inline  col-md-12" style="padding-left:2px">
 													<div class="col-md-2" style="padding-left:0px">
 														<label class="small">Origen:</label>
@@ -392,25 +375,8 @@
 											</div>
 										</div>
 									</div>
-	
 								</div>
-								<div class="form-check-inline  col-md-12" style="padding-left:2px">
-									<button id="btnGuardarEN1" type="button" class="btn btn-secondary"><i class="fa fa-save"></i> Guardar</button>
-									<span class="mx-1"></span>
-									<button id="btnAprobarEN1" type="button" class="btn btn-secondary"><i class="fa fa-check-circle"></i> Aprobar</button>
-									<span class="mx-1"></span>
-									<button id="btnAnularEN1" type="button" class="btn btn-secondary"><i class="fa fa-ban"></i> Anular</button>
-									<span class="mx-1"></span>
-									<button id="btnValorizar" type="button" class="btn btn-success"><i class="fa fa-balance-scale"></i> Valorizar</button>
-									<span class="mx-1"></span>
-									<button id="btnEnviarPro" type="button" class="btn btn-success"><i class="fas fa-envelope"></i> Enviar a Proveedor</button>
-									<span class="mx-1"></span>
-									<button id="btnImprimirEN1" type="button" class="btn btn-success"><i class="fa fa-print"></i> Exportar</button>
-									<span class="mx-1"></span>
-									<button id="btnAnadir" type="button" class="btn btn-success"><i class="fa fa-archive"></i> Añadir Factura</button>
-								</div>
-	
-								</div>
+							</div>
 	
 							<div id="tabs-4" class="tab">
 								<div class="row form-group" style="margin-bottom:0px;">
@@ -597,10 +563,22 @@
 							</div>
 	
 						</div>
-					</div>
+						<div class="form-check-inline  col-md-12" style="padding-left:2px">
+							<button id="btnGuardarEN1" type="button" class="btn btn-secondary"><i class="fa fa-save"></i> Guardar</button>
+							<span class="mx-1"></span>
+							<button id="btnAprobarEN1" type="button" class="btn btn-secondary"><i class="fa fa-check-circle"></i> Aprobar</button>
+							<span class="mx-1"></span>
+							<button id="btnAnularEN1" type="button" class="btn btn-secondary"><i class="fa fa-ban"></i> Anular</button>
+							<span class="mx-1"></span>
+							<button id="btnValorizar" type="button" class="btn btn-success"><i class="fa fa-balance-scale"></i> Valorizar</button>
+							<span class="mx-1"></span>
+							<button id="btnEnviarPro" type="button" class="btn btn-success"><i class="fas fa-envelope"></i> Enviar a Proveedor</button>
+							<span class="mx-1"></span>
+							<button id="btnImprimirEN1" type="button" class="btn btn-success"><i class="fa fa-print"></i> Exportar</button>
+							<span class="mx-1"></span>
+							<button id="btnAnadir" type="button" class="btn btn-success"><i class="fa fa-archive"></i> Añadir Factura</button>
+						</div>
 				</div>
-	
-	
 				<div class="row" id="FrameSalDet" hidden>
 					<div class="col-md-12">
 						<div class="row form-group">
@@ -875,8 +853,6 @@
 						<h6 style="text-align:center">@ViewBag.Titulo</h6>
 					</div>
 				</div>
-	
-	
 				<div id="tablaCabPrint">
 					<table>
 						<tbody>
@@ -1161,7 +1137,6 @@
 										<label class="small" id="txtAprobPiePrint">:</label>
 									</div>
 								</td>
-	
 							</tr>
 							<tr>
 								<td>
@@ -1337,7 +1312,6 @@
 				</div>
 			</div>
 		</div>
-	
 	 
 		<div class="modal" id="modalExportacion" tabindex="-1" role="dialog" aria-labelledby="exportacionModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
@@ -1377,7 +1351,6 @@
 				</div>
 			</div>
 		</div>
-	
 		
 		<div class="modal" id="modalReservaGuia" tabindex="-1" role="dialog" aria-labelledby="ReservaGuiaModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
@@ -1551,5 +1524,4 @@
 			</div>
 		</div>
 	</body>
-	
 </html>
